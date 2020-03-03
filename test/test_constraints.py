@@ -1,9 +1,11 @@
 import unittest
+import os
 from constrained_sampler.constraints import Constraint
+
 
 class ConstraintTestCase(unittest.TestCase):
     def setUp(self):
-        self.constraint = Constraint('../examples/mixture.txt')
+        self.constraint = Constraint(os.path.join(os.path.dirname(__file__), '../examples/mixture.txt'))
 
     def test_example(self):
         self.assertListEqual([0., 0.], self.constraint.get_example())

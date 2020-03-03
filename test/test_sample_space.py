@@ -1,10 +1,11 @@
 import unittest
+import os
 import time
 from constrained_sampler.sample_space import SampledSpace
 
 class SampledSpaceTestCase(unittest.TestCase):
     def setUp(self):
-        self.space = SampledSpace('../examples/mixture.txt', random_state=1234)
+        self.space = SampledSpace(os.path.join(os.path.dirname(__file__), '../examples/mixture.txt'), random_state=1234)
         self.example = self.space.current
 
     def test_len(self):
