@@ -5,6 +5,8 @@ Initially composed as a technical challenge for Citrine. This includes a package
  The principle functionality of the package is to use a Markov chain
  Monte Carlo to sample a unit hypersphere subject to constraints. The approach by default uses an adaptive displacement procedure
  for a variable rate of exploration dependent on the acceptance rate of points. 
+ Example input files are available in the [examples](examples) folder, 
+ with corresponding outputs in the [data](data) folder.  
  For more information on the input format, please consult
  the [prompt](prompt.pdf).  
 
@@ -32,7 +34,6 @@ Several additional optional parameters are included in the script to allow for m
 | -m --max_steps | Maximum number of steps for internal Markov chain. Defaults to 1e7. | 
 | -t --timeout | Timeout for sampler in minutes. Sampler will exit if exploration of max_steps is incomplete in timeout minutes. Defaults to 4.5 minutes.'|
 | -a --acceptance_rate | Desired acceptance rate for internal Markov chain. This impacts the adaptive displacement algorithm. Defaults to 0.01. |
-
 
 
 ## Scaling and future work
