@@ -7,6 +7,10 @@
 *.o
 *.so
 *.pyc
+build/
+dist/
+*.egg-info/
+
 
 # Packages #
 ############
