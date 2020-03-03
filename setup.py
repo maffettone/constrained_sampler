@@ -5,7 +5,7 @@ with open("Readme.md", "r") as fh:
 
 setuptools.setup(
     name="constrained_sampler-maffettone",
-    version="0.0.1",
+    version="0.0.2",
     description="Package to generate numbers in the unit hypercube subject to constraints.",
     long_description=long_description,
     long_description_content_type="text/markdown",
